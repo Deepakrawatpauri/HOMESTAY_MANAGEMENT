@@ -4,13 +4,11 @@ The Homestay Management project is a web-based application designed to manage an
 
 Technologies Used
 Frontend:
-
 HTML
 CSS
 JavaScript
 jQuery
 Backend:
-
 Spring MVC
 Spring Boot
 Spring Security
