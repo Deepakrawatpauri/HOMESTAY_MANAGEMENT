@@ -39,3 +39,13 @@ Automated email notifications for booking confirmations and updates.
 Database Access:
 
 Efficient data management and querying using Spring JPA.
+Usage
+For Users:
+
+Register an account and log in.
+Browse and book homestays.
+View and manage your bookings.
+For Admins:
+
+Log in to the admin panel to manage homestays and reservations.
+Use the admin panel to view and respond to user queries.
