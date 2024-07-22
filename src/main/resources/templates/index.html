@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="" th:href="@{/css/mainpage.css}"> 
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img th:src="@{/image/aasarya.jpg}" alt="Logo" width="140" height="120" class="top"> 
+    </a>
+  </div> 
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary margin">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link active textcolor" aria-current="page" href="#"><b>HOME</b></a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link textcolor" href="OURHOMESTAY.html"><b>OUR HOMESTAY</b></a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link textcolor" href="#"><b>MANAGE BOOKING</b></a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle textcolor" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           <b> SERVICES</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item textcolor" href="rooms.html"><b>ROOM</b></a></li>
+            <li><a class="dropdown-item textcolor" href="#"><b>CATERING</b></a></li>
+            
+          </ul>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link textcolor"   th:href="@{/login}"  target="_blank"><b>LOGIN</b></a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link textcolor" th:href="@{/register}"  target="_blank"><b>SIGN UP</b></a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <a href="booknow.html" class="btn btn-success" role="button">BOOK NOW</a> 
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+  
+  <div id="carouselExampleDark" class="carousel carousel-dark slide"  >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" data-bs-ride="carousel" data-bs-interval="10000">
+      <div class="carousel-item active" data-bs-interval="5000"data-bs-ride="carousel" >
+        <img th:src="@{/image/wallpaperflare.com_wallpaper (7).jpg}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="k">NATURE BEAUTY</h5>
+          <p class="k">Fusing more radiance to the motherland and the Northern Part of India in every sense is the state of Uttarakhand.
+             The state undeniably stands proud because of its mighty mountains that are considered some of the highest one in India. 
+            Starting with an elevation over 3000 m and ranging up to 7500 m there are so many peaks in Uttarakhand 
+            that are unknown and unexplored but still settled in a traveller's heart.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"data-bs-ride="carousel" >
+        <img th:src="@{/image/wallpaperflare.com_wallpaper (6).jpg}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="k">Homestay</h5>
+          <p class="k"> A Homestay is staying in someone's home as a paying guest for short time period
+             where the guests are provided with budget friendly accommodation and 
+             services by individual family and the local community.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000"data-bs-ride="carousel" >
+        <img th:src="@{/image/wallpaperflare.com_wallpaper (5).jpg}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="k">Himalayas</h5>
+          <p class="k">The Himalayas is the highest mountain range in the world, and has 9 out of 10 of the world's highest peaks, 
+            including Mount Everest. These mountains, referred to as the Third Pole,
+             are the source of some of Asia's major rivers and also help to regulate our planet's climate.<p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br><div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+
+  <div class="container zoomable-div">
+    <div class="row">
+      <div class="col-lg-3">
+        <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+         <h3>BOOK DIRECT</H3>
+        </a>
+      </nav>
+        
+    </div>
+
+      <div class="col-lg-3">
+        <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://www.shutterstock.com/image-illustration/no-charge-written-on-red-600w-428250082.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    NO HIDDEN CHARGES
+  </a>
+</nav>
+      </div>
+      <div class="col-lg-2">
+        <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img th:src="@{/image/payathotel.png}" width="30" height="30" class="d-inline-block align-top" alt="">
+    PAY AT HOTEL
+  </a>
+</nav>
+        
+
+      </div>
+      <div class="col-lg-2">
+        <!-- Image and text -->
+   <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+    <img th:src="@{/image/WhatsApp Image 2023-03-28 at 14.52.55.jpg}" width="30" height="30" class="d-inline-block align-top" alt="">
+     EXCULSIVE OFFERS
+    </a></div>
+</nav>
+
+    <div class="col-lg-2">
+      <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://img.freepik.com/free-vector/wireless-network-symbol_1284-42447.jpg?w=2000" width="30" height="30" class="d-inline-block align-top" alt="">
+    WIFI ACCESS
+  </a>
+</nav>
+    </div>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded"><h1 class="text-center">UNIQUE EXPERIENCES</h1><br><br>
+    <div class="row">
+    <div class="col-lg-3">
+      <video id="processAndSpeak" class="vid"  width="300px" height="300px" autoplay muted playsinline loop>
+        <source th:src="@{/image/uk.mp4}" type="video/mp4">
+      </video>
+      </div>
+    <div class="col-lg-3">
+      <button  style="background-color: rgb(184, 134, 11); color: white; border-color: rgb(184, 134, 11); border-raidus:5px" >homestay</button>
+      <p>
+      The Himalayan ranges are home to several secluded communities, their
+       isolation having given them a uniqueness in their way of life, 
+      and a hitherto unexplored cultural and natural wealth. Staying with hardened highland 
+      families in their homesteads and alpine huts on remote mountain ridges is an experience 
+      a traveller is unlikely to forget in a lifetime.</p>
+    </div>
+    <div class="col-lg-3">
+      <video class="vid"  width="250px" height="300px;" autoplay muted playsinline loop>
+        <source th:src="@{/image/kafuli.mp4}" type="video/mp4">
+      </video>
+    </div>
+    <div class="col-lg-3">
+    <button id="speakButton" style="background-color: rgb(184, 134, 11); color: white; border-color: rgb(184, 134, 11);">kafuli</button>
+      <P>
+                     Kafuli is one such dish that can never go wrong if you want to 
+                  impress a Pahadi friend, who is coming over for lunch.
+                  To prepare this dish, two main ingredients namely spinach and 
+                 fenugreek leaves are cooked together in an iron pot,
+               after which salt and spices are added to accentuate its flavour. 
+               The gravy for Kafuli is prepared by making a paste
+               made out of rice or wheat and adding water to it.</p>
+        </div>
+  <div class="row"><div class="col-lg-3"><br>
+    <h6>MANDUA ROTI</h6><br>
+    <p>Famously known as a staple food in many parts of North India, Mandua ki Roti 
+      refers to the chapattis made from a cereal called Mandua. Mandua ki Roti is served in 
+      the main course and represents the culinary style of Uttarakhand. This flat bread is also quite 
+      popular among the tourists visiting Uttarakhand.
+
+    </p>
+  </div>
+    <div class="col-lg-3">
+      <video class="vid"  width="100%" height="250px;" autoplay muted playsinline loop>
+        <source th:src="@{/image/WhatsApp Video 2023-11-03 at 13.25.57_d1817b67.mp4}" type="video/mp4">
+      </video>
+
+    </div>
+    
+    <div class="col-lg-3">
+      <H6> Chainsoo</H6>
+      <P>With this delectable dish, we bring to you the tantalizing flavours of Garhwal. 
+        High in protein value, Chainsoo is prepared from Sabut Urad dal (black gram lentil) and 
+        is a popular lunch option for Pahadis living in any part of the world. To prepare this dish, 
+        you need to roast the lentils first and make a fine paste out of it. 
+        Transfer the mixture into an iron pot, keep the flame low and stir until it’s ready to serve.</P>
+    </div>
+    <div class="col-lg-3"> 
+      <video class="vid"  width="100%" height="250px;" autoplay muted playsinline loop>
+        <source th:src="@{/image/chaisoo.mp4}" type="video/mp4">
+      </video>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col-lg-3">
+      <video class="vid"  width="300px" height="300px;" autoplay muted playsinline loop>
+        <source th:src="@{/image/HOMESTAY2.mp4}" type="video/mp4">
+      </video>
+</div>
+    <div class="col-lg-3">
+      <video class="vid"  width="100%" height="180px;" autoplay muted playsinline loop>
+        <source th:src="@{/image/istockphoto-613269062-640_adpp_is.mp4}" type="video/mp4">
+      </video>
+    <p>Put simply - It's staying in a spare room of a real home while the homeowner is there. 
+      All around the world, from cities to off the beaten path destinations,
+       'home from home'. In a homestay you book to stay with a local in their home.</p>
+    </div>
+    <div class="col-lg-3">
+      <img width="100%" height="200%"   src="https://d2vbj8g7upsspg.cloudfront.net/fit-in/580x348/filters:format(webp)/30-stades/media/post_attachments/LmjN63dz2210nzJ6FJMe.jpg" alt="" class="img-fluid">
+    <p>Bhatt (black soybeans) ki chudkani is made by blending the beans with a paste of rice. 
+      Served here with rice, thechwani, mountain radish and greens.</p>
+    </div>
+    <div class="col-lg-3"><img width="100%" height="80%" src="https://i0.wp.com/the-shooting-star.com/wp-content/uploads/2020/04/uttarakhand_homestays.png?resize=512%2C512&ssl=1" alt="" class="image-fluid"></div>
+  
+  </div>
+</div>
+</div>
+<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"><h1 class="text-center">ADVENTURE & CULTURAL</h1><br>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/trekking.mp4}" type="video/mp4">
+        </video>
+
+        <br>
+        <h6 class="text-center">Trekking</h6>
+      </div>
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/Mountaineering.mp4}" type="video/mp4">
+        </video>
+      <h6 class="text-center">Mountaineering</h6>
+      </div>
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/Paragliding.mp4}" type="video/mp4">
+        </video>
+      <h6 class="text-center">Paragliding</h6>
+      </div>
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/Skiing.mp4}" type="video/mp4">
+        </video>
+      <h6  class="text-center">Skiing</h6>
+      </div>
+    </div>
+    <div  class="row">
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/uttrkhandi dance.mp4}" type="video/mp4">
+        </video>
+         <h6 class="text-center">UTTARAKHANDI DANCE</h6>
+      </div>
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/flowers.mp4}" type="video/mp4">
+        </video>
+        <h6 class="text-center">PHOOL DEI</h6>
+</div>
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/diwali.mp4}" type="video/mp4">
+        </video>
+        <h6 class="text-center">BUDI DIWALI</h6>
+      </div>
+      <div class="col-lg-3">
+        <video class="vid"  width="95%" height="200px;" autoplay muted playsinline loop>
+          <source th:src="@{/image/mela.mp4}" type="video/mp4">
+        </video>
+        <h6 class="text-center">MELA</h6>
+      </div>
+    </div>
+  </div>
+</div></div>
+ <div class="container-fluid">
+  <img width="100%" height="60%" src="https://i.ytimg.com/vi/waCc1H3zYBI/maxresdefault.jpg" alt="">
+
+ </div><br>
+
+
+ <!-- Footer 2 - Bootstrap Brain Component -->
+<footer class="footer">
+
+  <!-- Widgets - Bootstrap Brain Component -->
+  <section class="bg-light py-4 py-md-5 py-xl-8 border-top border-light">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <a href="#!">
+              <img th:src="@{/image/aasarya.jpg}" alt="BootstrapBrain Logo" width="175" height="120">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <h4 class="widget-title mb-4 textcolor">Get in Touch</h4>
+            <address class="mb-4 textcolor">kargi chowk banjarawala dehradun</address>
+            <p class="mb-1">
+              <a class="link-secondary text-decoration-none textcolor" href="tel:+15057922430">8937041731</a>
+            </p>
+            <p class="mb-0">
+              <a class="link-secondary text-decoration-none textcolor" href="mailto:demo@yourdomain.com">aasharyahomestay.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+          <div class="widget">
+            <h4 class="widget-title mb-4 textcolor">Learn More</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none textcolor">About</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none textcolor">Contact</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none textcolor">Advertise</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="link-secondary text-decoration-none textcolor">Terms of Service</a>
+              </li>
+              <li class="mb-0">
+                <a href="#!" class="link-secondary text-decoration-none textcolor">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-4">
+          <div class="widget">
+            <h4 class="widget-title mb-4 textcolor">Our</h4>
+            <p class="mb-4 textcolor">Subscribe to our newsletter to get our news & discounts delivered to you.</p>
+            <form action="#!">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="input-group">
+                    <span class="input-group-text" id="email-newsletter-addon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                      </svg>
+                    </span>
+                    <input type="email" class="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-primary textcolor" type="submit">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright - Bootstrap Brain Component -->
+  <div class="bg-light py-4 py-md-5 py-xl-8 border-top border-light-subtle">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-xs-12 col-md-7 order-1 order-md-0">
+          <div class="copyright text-center text-md-start textcolor">
+            &copy; 2024. All Rights Reserved.
+          </div>
+          <div class="credits text-secondary text-center text-md-start mt-2 fs-7 textcolor">
+            Built by <a href="https://bootstrapbrain.com/" class="link-secondary text-decoration-none textcolor">BootstrapBrain</a> with <span class="text-primary">&#9829;</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-5 order-0 order-md-1">
+          <ul class="nav justify-content-center justify-content-md-end">
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#!">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+  <!-- Footer -->
+  
+
+<!-- End of .container -->
+
+ 
+
+  
+
+
+ 
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+
+  
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+  
+  <script>
+    
+      $(document).ready(function() {
+        $(".zoomable-div").hover(
+          function() {
+            $(this).css("transform", "scale(1.2)"); // Increase the scale for zooming in.
+          },
+          function() {
+            $(this).css("transform", "scale(1)"); // Reset the scale when the mouse leaves.
+          }
+        );
+      });
+      $(document).ready(function() {
+        $(".vid").hover(
+          function() {
+            $(this).css("transform", "scale(1.2)"); // Increase the scale for zooming in.
+          },
+          function() {
+            $(this).css("transform", "scale(1)"); // Reset the scale when the mouse leaves.
+          }
+        );
+      });
+    
+  </script>
+  
+
+    
+    
+</body>
+</html>

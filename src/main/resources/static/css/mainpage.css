@@ -1,0 +1,63 @@
+.container-fluid{
+    border: 0vmin;
+}
+.top{
+    margin-left: 650px;
+    
+}
+.textcolor{
+    color: rgb(0, 0, 0);
+    font-size:  1rem;
+    font-style: initial;
+    
+}
+
+.margin{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.d-block w-100{
+    width: auto;
+    height: auto;
+}
+.c{
+    color:green;
+}
+.nav-link dropdown-toggle{
+    color: green;
+}
+.k{
+    color: white;
+}
+.l{
+    color: white;
+}
+.container{
+    color: darkgoldenrod;
+}
+.zoomable-div {
+    width:1250px; /* Set the initial width */
+    height: 80px; /* Set the initial height */
+    transition: transform 0.4s; /* Add a smooth transition effect */
+    /* Add other styles as needed */
+  }
+  .vid{
+    transition: transform 0.3s;
+
+  }
+  .marginr{
+    margin-left: 10px;
+  }
+  
+  .s{
+    padding-top: 3%;
+    padding-bottom: 1%;
+
+  }
+  .dl{
+    padding-top: 2%;
+    padding-bottom: 8%;
+    
+  }
+  
+
